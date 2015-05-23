@@ -61,8 +61,8 @@ namespace Dargon.Commons.FormatProviders
             }
 
             string precision = format.Substring(2);
-            if (String.IsNullOrEmpty(precision)) precision = "2";
-            return String.Format("{0:N" + precision + "}{1}", size, suffix);
+            if (System.String.IsNullOrEmpty(precision)) precision = "2";
+            return System.String.Format("{0:N" + precision + "}{1}", size, suffix);
 
         }
 

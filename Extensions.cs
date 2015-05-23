@@ -142,7 +142,7 @@ namespace Dargon.Commons
       //http://stackoverflow.com/questions/128618/c-file-size-format-provider
       public static string ToFileSize(this long l)
       {
-         return String.Format(new FileSizeFormatProvider(), "{0:fs}", l);
+         return System.String.Format(new FileSizeFormatProvider(), "{0:fs}", l);
       }
 
       private delegate K TryGetValueDelegate<K, V>(K key, out V value);

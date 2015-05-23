@@ -23,7 +23,7 @@ namespace Dargon.Commons
          if (length == -1)
             length = data.Length - index;
          T[] result = new T[length];
-         Array.Copy(data, index, result, 0, length);
+         System.Array.Copy(data, index, result, 0, length);
          return result;
       }
 

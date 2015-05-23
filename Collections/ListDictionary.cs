@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Dargon.Commons.Array;
 
 namespace Dargon.Commons.Collections
 {
@@ -168,7 +169,7 @@ namespace Dargon.Commons.Collections
       /// <returns>
       /// An <see cref="T:System.Collections.Generic.ICollection`1"/> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2"/>.
       /// </returns>
-      public ICollection<K> Keys { get { return Util.Generate(list.Count, i => list[i].Key); } }
+      public ICollection<K> Keys { get { return ArrayGenerator.Generate(list.Count, i => list[i].Key); } }
 
       /// <summary>
       /// Gets an <see cref="T:System.Collections.Generic.ICollection`1"/> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
@@ -176,6 +177,6 @@ namespace Dargon.Commons.Collections
       /// <returns>
       /// An <see cref="T:System.Collections.Generic.ICollection`1"/> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2"/>.
       /// </returns>
-      public ICollection<V> Values { get { return Util.Generate(list.Count, i => list[i].Value); } }
+      public ICollection<V> Values { get { return ArrayGenerator.Generate(list.Count, i => list[i].Value); } }
    }
 }

@@ -26,7 +26,7 @@ namespace Dargon.Commons
       public static string Reverse(this string s)
       {
          char[] arr = s.ToCharArray();
-         Array.Reverse(arr);
+         System.Array.Reverse(arr);
          return new string(arr);
       }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Dargon.Commons.Array;
 
 namespace Dargon.Commons
 {
@@ -15,7 +16,7 @@ namespace Dargon.Commons
       /// </summary>
       public static string ReadStringOfLength(this BinaryReader reader, int length)
       {
-         var data = Util.Generate(length, i => reader.ReadByte());
+         var data = ArrayGenerator.Generate(length, i => reader.ReadByte());
          return Encoding.UTF8.GetString(data, 0, data.Length);
       }
 

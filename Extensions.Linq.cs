@@ -31,7 +31,7 @@ namespace Dargon.Commons
                yield return value;
       }
 
-      public static T SelectRandom<T>(this IEnumerable<T> source, Random rng = null)
+      public static T SelectRandom<T>(this IEnumerable<T> source, System.Random rng = null)
       {
          int rand = rng != null ? rng.Next() : StaticRandom.Next(Int32.MaxValue);
          var options = source.ToList();
@@ -40,7 +40,7 @@ namespace Dargon.Commons
 
 
       // via http://stackoverflow.com/questions/1651619/optimal-linq-query-to-get-a-random-sub-collection-shuffle
-      public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source, Random rng = null)
+      public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source, System.Random rng = null)
       {
          if (source == null) throw new ArgumentNullException("source");
          //if (rng == null) throw new ArgumentNullException("rng");
@@ -49,7 +49,7 @@ namespace Dargon.Commons
       }
 
       private static IEnumerable<T> ShuffleIterator<T>(
-          this IEnumerable<T> source, Random rng)
+          this IEnumerable<T> source, System.Random rng)
       {
          var buffer = source.ToList();
          for (int i = 0; i < buffer.Count; i++)
@@ -73,7 +73,7 @@ namespace Dargon.Commons
          return !source.Any(predicate);
       }
 
-      public static string Join<T>(this IEnumerable<T> e, string delimiter) { return String.Join(delimiter, e); }
+      public static string Join<T>(this IEnumerable<T> e, string delimiter) { return System.String.Join(delimiter, e); }
 
       public static TAccumulate Aggregate<TSource, TAccumulate>(this IEnumerable<TSource> source, TAccumulate seed, Action<TAccumulate, TSource> action)
       {

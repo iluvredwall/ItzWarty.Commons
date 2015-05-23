@@ -107,6 +107,7 @@
     <Compile Include="Collections\SortedDictionary.cs" />
     <Compile Include="Collections\SortedSet.cs" />
     <Compile Include="Collections\ValuesSortState.cs" />
+    <Compile Include="Comparers\DoubleComparer.cs" />
     <Compile Include="Comparers\EqualityComparer.cs" />
     <None Include="Deprecated\ExpiringCache.cs" />
     <Compile Include="Extensions.cs" />

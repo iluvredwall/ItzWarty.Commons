@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using Dargon.Commons.Array;
 using Dargon.Commons.Pooling;
 using Xunit;
 
@@ -33,7 +34,7 @@ namespace Dargon.Commons.Collections {
          var readyEvent = new CountdownEvent(threadCount);
          var beginEvent = new CountdownEvent(1);
          var doneEvent = new CountdownEvent(threadCount);
-         var threads = Util.Generate(threadCount,
+         var threads = ArrayGenerator.Generate(threadCount,
             threadNumber => new Thread(() => {
                readyEvent.Signal();
                beginEvent.Wait();

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Dargon.Commons.Array;
 
 namespace Dargon.Commons.Collections {
    public class SingleConsumerSingleProducerConcurrentQueue<T> : IConcurrentQueue<T> where T : class {
@@ -31,7 +32,7 @@ namespace Dargon.Commons.Collections {
       }
 
       private Segment<T> CreateSegment() {
-         return new Segment<T>(Util.Generate(kBucketSize, i => new Segment<T>.Box<T>()), sentinelEnd);
+         return new Segment<T>(ArrayGenerator.Generate(kBucketSize, i => new Segment<T>.Box<T>()), sentinelEnd);
       }
 
       public void Enqueue(T item) {

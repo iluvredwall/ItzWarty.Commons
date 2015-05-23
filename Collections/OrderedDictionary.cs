@@ -25,7 +25,7 @@ namespace Dargon.Commons.Collections
          {
             if (index < 0 || index >= _keyedCollection.Count)
             {
-               throw new ArgumentException(String.Format("The index is outside the bounds of the dictionary: {0}", index));
+               throw new ArgumentException(System.String.Format("The index is outside the bounds of the dictionary: {0}", index));
             }
             return _keyedCollection[index].Value;
          }
@@ -33,7 +33,7 @@ namespace Dargon.Commons.Collections
          {
             if (index < 0 || index >= _keyedCollection.Count)
             {
-               throw new ArgumentException(String.Format("The index is outside the bounds of the dictionary: {0}", index));
+               throw new ArgumentException(System.String.Format("The index is outside the bounds of the dictionary: {0}", index));
             }
             var kvp = new KeyValuePair<TKey, TValue>(_keyedCollection[index].Key, value);
             _keyedCollection[index] = kvp;
@@ -46,7 +46,7 @@ namespace Dargon.Commons.Collections
          {
             if (_keyedCollection.Contains(key) == false)
             {
-               throw new ArgumentException(String.Format("The given key is not present in the dictionary: {0}", key));
+               throw new ArgumentException(System.String.Format("The given key is not present in the dictionary: {0}", key));
             }
             var kvp = _keyedCollection[key];
             return kvp.Value;
@@ -188,7 +188,7 @@ namespace Dargon.Commons.Collections
       {
          if (index < 0 || index >= _keyedCollection.Count)
          {
-            throw new ArgumentException(String.Format("The index was outside the bounds of the dictionary: {0}", index));
+            throw new ArgumentException(System.String.Format("The index was outside the bounds of the dictionary: {0}", index));
          }
          return _keyedCollection[index];
       }
@@ -207,7 +207,7 @@ namespace Dargon.Commons.Collections
       {
          if (index < 0 || index >= _keyedCollection.Count)
          {
-            throw new ArgumentException(String.Format("The index was outside the bounds of the dictionary: {0}", index));
+            throw new ArgumentException(System.String.Format("The index was outside the bounds of the dictionary: {0}", index));
          }
          _keyedCollection.RemoveAt(index);
       }

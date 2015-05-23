@@ -5,10 +5,10 @@ namespace Dargon.Commons
 {
    public class TemporarySeek : IDisposable
    {
-      private Stream m_stream;
+      private System.IO.Stream m_stream;
       private long m_restoredPosition;
 
-      public TemporarySeek(Stream stream, long offset, SeekOrigin origin = SeekOrigin.Begin)
+      public TemporarySeek(System.IO.Stream stream, long offset, SeekOrigin origin = SeekOrigin.Begin)
       {
          m_stream = stream;
          m_restoredPosition = stream.Position;
