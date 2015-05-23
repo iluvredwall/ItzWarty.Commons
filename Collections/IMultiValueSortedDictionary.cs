@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Dargon.Commons.Collections {
    public interface IMultiValueSortedDictionary<TKey, TValue> {
@@ -39,13 +38,13 @@ namespace Dargon.Commons.Collections {
 
       void Clear();
       bool ContainsKey(TKey key);
-      SortedDictionary<TKey, HashSet<TValue>>.Enumerator GetEnumerator();
+      System.Collections.Generic.SortedDictionary<TKey, HashSet<TValue>>.Enumerator GetEnumerator();
       bool Remove(TKey key);
       bool TryGetValue(TKey key, out HashSet<TValue> value);
       IComparer<TKey> Comparer { get; }
       int Count { get; }
-      SortedDictionary<TKey, HashSet<TValue>>.KeyCollection Keys { get; }
-      SortedDictionary<TKey, HashSet<TValue>>.ValueCollection Values { get; }
+      System.Collections.Generic.SortedDictionary<TKey, HashSet<TValue>>.KeyCollection Keys { get; }
+      System.Collections.Generic.SortedDictionary<TKey, HashSet<TValue>>.ValueCollection Values { get; }
       HashSet<TValue> this[TKey key] { get; set; }
    }
 }
