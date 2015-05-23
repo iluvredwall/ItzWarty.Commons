@@ -71,6 +71,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Action\ActionUtil.cs" />
+    <Compile Include="Array\ArrayGenerator.cs" />
+    <Compile Include="Array\ArrayUtil.cs" />
+    <Compile Include="Array\ByteArrayUtil.cs" />
     <Compile Include="Collections\CollectionFactory.cs" />
     <Compile Include="Collections\ConcurrentBag.cs" />
     <Compile Include="Collections\ConcurrentDictionary.cs" />
@@ -107,9 +111,12 @@
     <Compile Include="Collections\SortedDictionary.cs" />
     <Compile Include="Collections\SortedSet.cs" />
     <Compile Include="Collections\ValuesSortState.cs" />
+    <Compile Include="Comparers\ByteArrayComparer.cs" />
     <Compile Include="Comparers\DoubleComparer.cs" />
+    <Compile Include="Comparers\EnumerableComparer.cs" />
     <Compile Include="Comparers\EqualityComparer.cs" />
     <None Include="Deprecated\ExpiringCache.cs" />
+    <Compile Include="Date\DateUtil.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Extensions.Collections.cs" />
     <Compile Include="Extensions.IO.cs" />
@@ -126,10 +133,16 @@
     <Compile Include="Pooling\ObjectPoolImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NullConsole.cs" />
+    <Compile Include="Random\RandomCumulativeDistribution.cs" />
     <Compile Include="ReferenceCounter.cs" />
     <Compile Include="Comparers\ReverseComparer.cs" />
     <Compile Include="Comparers\CaseInsensitiveStringEqualityComparer.cs" />
     <Compile Include="StaticRandom.cs" />
+    <Compile Include="Stream\StreamUtil.cs" />
+    <Compile Include="String\StringRandom.cs" />
+    <Compile Include="String\StringUtil.cs" />
+    <Compile Include="String\Tokenizer.cs" />
+    <Compile Include="Subscriber\Subscriber.cs" />
     <Compile Include="TemporarySeek.cs" />
     <Compile Include="Collections\UniqueIdentificationSet.cs" />
     <Compile Include="UsingTimer.cs" />

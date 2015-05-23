@@ -5,7 +5,7 @@ namespace Dargon.Commons
    public static class StaticRandom
    {
       private static readonly object s_lock = new object();
-      private static readonly Random s_random = new Random(10);
+      private static readonly System.Random s_random = new System.Random(10);
 
       public static int Next(int exclusiveUpperBound)
       {
@@ -49,12 +49,12 @@ namespace Dargon.Commons
             return inclusiveLowerBound + s_random.NextDouble() * (exclusiveUpperBound - inclusiveLowerBound);
       }
 
-      public static Random NextRandom()
+      public static System.Random NextRandom()
       {
          var buffer = new byte[4];
          lock(s_lock)
             s_random.NextBytes(buffer);
-         return new Random(BitConverter.ToInt32(buffer, 0));
+         return new System.Random(BitConverter.ToInt32(buffer, 0));
       }
 
       public static bool NextBoolean()
