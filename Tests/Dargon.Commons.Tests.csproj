@@ -56,7 +56,7 @@
     <Compile Include="Collections\HeapPriorityQueueTests.cs" />
     <Compile Include="Collections\ObjectPoolBenchmark.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UtilTests.cs" />
+    <Compile Include="ByteArrayComparerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dargon.Commons.csproj">

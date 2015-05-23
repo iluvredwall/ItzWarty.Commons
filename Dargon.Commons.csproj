@@ -133,7 +133,7 @@
     <Compile Include="Pooling\ObjectPoolImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NullConsole.cs" />
-    <Compile Include="Random\RandomCumulativeDistribution.cs" />
+    <Compile Include="Random\DistributionGenerator.cs" />
     <Compile Include="ReferenceCounter.cs" />
     <Compile Include="Comparers\ReverseComparer.cs" />
     <Compile Include="Comparers\CaseInsensitiveStringEqualityComparer.cs" />

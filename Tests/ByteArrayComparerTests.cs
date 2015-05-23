@@ -5,7 +5,7 @@ using NMockito;
 using Xunit;
 
 namespace Dargon.Commons {
-   public class UtilTests : NMockitoInstance {
+   public class ByteArrayComparerTests : NMockitoInstance {
       private static readonly byte[] buffer = ArrayGenerator.Generate(255, i => (byte)i);
       private readonly byte[] bufferCopy = ArrayGenerator.Generate(buffer.Length, i => buffer[i]);
 
