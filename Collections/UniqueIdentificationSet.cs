@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    /// <summary>
    /// Represents a set of all unique UInt32 values.

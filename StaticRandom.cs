@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public static class StaticRandom
    {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IPriorityQueue<TValue, TPriority> : IQueue<TValue> where TPriority : IComparable<TPriority> {
       void Enqueue(TValue node, TPriority priority);
 

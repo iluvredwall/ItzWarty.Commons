@@ -1,7 +1,7 @@
 ﻿using NMockito;
 using Xunit;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
 // Ripped from https://bitbucket.org/BlueRaja/high-speed-priority-queue-for-c/src/19dda413a12d87e61fa819280f33e25534f2b4e8/Priority%20Queue%20Tests/HeapPriorityQueueTests.cs?at=master - License MIT
    public class HeapPriorityQueueTests : NMockitoInstance {
       private class Node : IPriorityQueueNode<int> {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    /// <summary>
    /// A dictionary object that allows rapid hash lookups using keys, but also

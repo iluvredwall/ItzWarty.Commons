@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class SingleConsumerSingleProducerConcurrentQueue<T> : IConcurrentQueue<T> where T : class {
       public const int kBucketSize = 32;
 

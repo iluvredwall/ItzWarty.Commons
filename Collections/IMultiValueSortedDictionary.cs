@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IMultiValueSortedDictionary<TKey, TValue> {
       /// <summary>
       /// Adds the specified value under the specified key

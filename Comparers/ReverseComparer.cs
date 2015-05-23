@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ItzWarty.Comparers
+namespace Dargon.Commons.Comparers
 {
    public class ReverseComparer<T> : IComparer<T>
       where T : IComparable<T>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IMultiValueDictionary<TKey, TValue> {
       /// <summary>
       /// Adds the specified value under the specified key

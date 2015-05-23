@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using ItzWarty.Collections;
+using Dargon.Commons.Collections;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public static partial class Extensions
    {

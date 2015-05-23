@@ -7,7 +7,7 @@
     <ProjectGuid>{01EDE772-8555-41B9-8627-6CBC25987940}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ItzWarty</RootNamespace>
+    <RootNamespace>Dargon.Commons</RootNamespace>
     <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -59,9 +59,9 @@
     <Compile Include="UtilTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ItzWarty.Commons.csproj">
+    <ProjectReference Include="..\Dargon.Commons.csproj">
       <Project>{097b6b08-4034-408a-b3c0-a12e8f9e8893}</Project>
-      <Name>ItzWarty.Commons</Name>
+      <Name>Dargon.Commons</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

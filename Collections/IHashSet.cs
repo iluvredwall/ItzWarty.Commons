@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IHashSet<T> : ISet<T>, IReadOnlySet<T> {
       int RemoveWhere(Predicate<T> match);
       void TrimExcess();

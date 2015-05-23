@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ItzWarty.Comparers
+namespace Dargon.Commons.Comparers
 {
    public unsafe class CaseInsensitiveStringEqualityComparer : IEqualityComparer<string>
    {

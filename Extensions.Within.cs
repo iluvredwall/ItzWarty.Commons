@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public static partial class Extensions
    {

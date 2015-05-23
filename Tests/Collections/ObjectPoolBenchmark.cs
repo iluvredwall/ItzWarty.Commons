@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using ItzWarty.Pooling;
+using Dargon.Commons.Pooling;
 using Xunit;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class ObjectPoolBenchmark {
       [Fact]
       public void Run() {

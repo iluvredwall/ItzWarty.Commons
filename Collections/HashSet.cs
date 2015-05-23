@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class HashSet<T> : System.Collections.Generic.HashSet<T>, IHashSet<T> {
       public HashSet() { }
       public HashSet(IEnumerable<T> collection) : base(collection) { }

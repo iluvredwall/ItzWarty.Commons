@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IReadOnlySet<T> : IReadOnlyCollection<T> {
       /*
       bool IsProperSubsetOf(IEnumerable<T> other);

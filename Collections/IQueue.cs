@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IQueue<T> : IEnumerable<T>, IEnumerable {
       void Clear();
       bool Contains(T item);

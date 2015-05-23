@@ -1,4 +1,4 @@
-﻿namespace ItzWarty
+﻿namespace Dargon.Commons
 {
     /// <summary>
     /// USAGE:

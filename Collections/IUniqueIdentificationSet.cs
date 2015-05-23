@@ -1,4 +1,4 @@
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IUniqueIdentificationSet {
       /// <summary>
       /// Takes a unique identifier from the Unique Identification set.

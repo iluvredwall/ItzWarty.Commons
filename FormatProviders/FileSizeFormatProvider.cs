@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ItzWarty.FormatProviders
+namespace Dargon.Commons.FormatProviders
 {
     //http://stackoverflow.com/questions/128618/c-file-size-format-provider
     public class FileSizeFormatProvider : IFormatProvider, ICustomFormatter

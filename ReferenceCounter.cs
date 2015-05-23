@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public abstract class ReferenceCounter<TExposed> : IDisposable
    {

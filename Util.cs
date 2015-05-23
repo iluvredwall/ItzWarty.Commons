@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public class GeneratorExitException : Exception {
       public GeneratorExitException() : base("The Generator is unable to produce more results.  Perhaps, there is nothing left to produce?") {}

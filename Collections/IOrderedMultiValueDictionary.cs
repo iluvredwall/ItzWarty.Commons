@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IOrderedMultiValueDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, ISet<TValue>>> {
       /// <summary>
       /// Adds the specified value under the specified key

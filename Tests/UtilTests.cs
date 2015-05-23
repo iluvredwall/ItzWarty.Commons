@@ -2,7 +2,7 @@
 using NMockito;
 using Xunit;
 
-namespace ItzWarty {
+namespace Dargon.Commons {
    public class UtilTests : NMockitoInstance {
       private static readonly byte[] buffer = Util.Generate(255, i => (byte)i);
       private readonly byte[] bufferCopy = Util.Generate(buffer.Length, i => buffer[i]);

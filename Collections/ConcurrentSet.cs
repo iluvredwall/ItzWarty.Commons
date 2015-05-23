@@ -4,7 +4,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    public class ConcurrentSet<T> : IConcurrentSet<T>, ISet<T> {
       ConcurrentDictionary<T, byte> storage;

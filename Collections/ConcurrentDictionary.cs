@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class ConcurrentDictionary<TKey, TValue> : System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>, IConcurrentDictionary<TKey, TValue> {
       public ConcurrentDictionary() 
          : base() { }

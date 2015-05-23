@@ -1,11 +1,11 @@
 ﻿using NMockito;
 using Xunit;
-using ICL = ItzWarty.Collections;
+using ICL = Dargon.Commons.Collections;
 using SCG = System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class ConcurrentDictionaryUsabilityTest : NMockitoInstance {
-      readonly ICL.ConcurrentDictionary<int, string> dict = new ICL.ConcurrentDictionary<int, string>(
+      readonly ConcurrentDictionary<int, string> dict = new ConcurrentDictionary<int, string>(
          new SCG.Dictionary<int, string> {
             [0] = "zero",
             [1] = "one"
@@ -72,7 +72,7 @@ namespace ItzWarty.Collections {
 
       [Fact]
       public void ReferenceImplicitlyCastableToIConcurrentDictionary() {
-         ICL.IConcurrentDictionary<int, string> x = dict;
+         IConcurrentDictionary<int, string> x = dict;
          AssertEquals(x, dict);
       }
    }

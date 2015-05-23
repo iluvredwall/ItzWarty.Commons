@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Text;
-using ItzWarty.FormatProviders;
+using Dargon.Commons.FormatProviders;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public static class Extend {
       public static T[] Cast<T, U>(this U[] values, Func<U, T> cast) {

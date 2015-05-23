@@ -1,4 +1,4 @@
-﻿namespace ItzWarty.Collections {
+﻿namespace Dargon.Commons.Collections {
    public class ImmutableSet {
       public static IReadOnlySet<T> Of<T>() {
          return new HashSet<T>();

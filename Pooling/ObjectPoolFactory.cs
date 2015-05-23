@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ItzWarty.Collections;
+using Dargon.Commons.Collections;
 
-namespace ItzWarty.Pooling {
+namespace Dargon.Commons.Pooling {
    public interface ObjectPoolFactory {
       ObjectPool<T> CreatePool<T>(Func<T> generator);
       ObjectPool<T> CreatePool<T>(Func<T> generator, string name);

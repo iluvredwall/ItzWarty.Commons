@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    public class ListDictionary<K, V> : IListDictionary<K, V> {
       private List<KeyValuePair<K, V>> list = new List<KeyValuePair<K, V>>();  

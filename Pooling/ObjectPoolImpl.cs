@@ -1,7 +1,7 @@
 ﻿using System;
-using ItzWarty.Collections;
+using Dargon.Commons.Collections;
 
-namespace ItzWarty.Pooling {
+namespace Dargon.Commons.Pooling {
    public class ObjectPoolImpl<T> : ObjectPool<T> {
       private readonly Func<T> generator;
       private readonly IConcurrentBag<T> container;

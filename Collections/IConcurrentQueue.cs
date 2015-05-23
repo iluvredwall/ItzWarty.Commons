@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface IConcurrentQueue<T> : IEnumerable<T> {
       void CopyTo(T[] array, int index);
       void Enqueue(T item);

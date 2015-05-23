@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    public class OrderedMultiValueDictionary<TKey, TValue> : IOrderedMultiValueDictionary<TKey, TValue> {
       private readonly bool m_valuesSorted;

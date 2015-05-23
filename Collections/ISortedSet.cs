@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public interface ISortedSet<T> : IReadOnlySet<T>, ISet<T> {
       int RemoveWhere(Predicate<T> match);
       IEnumerable<T> Reverse();

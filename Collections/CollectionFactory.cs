@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ItzWarty.Collections {
+namespace Dargon.Commons.Collections {
    public class CollectionFactory : ICollectionFactory {
       public IConcurrentDictionary<K, V> CreateConcurrentDictionary<K, V>() => new ConcurrentDictionary<K, V>();
 

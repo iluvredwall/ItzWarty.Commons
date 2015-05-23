@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ItzWarty.Comparers
+namespace Dargon.Commons.Comparers
 {
     public class LambdaComparer<T> : IComparer<T>
     {

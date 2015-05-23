@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ItzWarty.Collections
+namespace Dargon.Commons.Collections
 {
    /// <summary>
    /// via http://stackoverflow.com/questions/2629027/no-generic-implementation-of-ordereddictionary

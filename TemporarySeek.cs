@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace ItzWarty
+namespace Dargon.Commons
 {
    public class TemporarySeek : IDisposable
    {

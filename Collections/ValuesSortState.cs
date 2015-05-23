@@ -1,4 +1,4 @@
-﻿namespace ItzWarty.Collections
+﻿namespace Dargon.Commons.Collections
 {
    public enum ValuesSortState
    {
