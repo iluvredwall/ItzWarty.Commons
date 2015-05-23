@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Dargon.Commons.Random {
-   public static class RandomCumulativeDistribution {
+   public static class DistributionGenerator {
       /// <summary>
       /// Returns an array containing numbers spaced between 0 and the given maximum value
       /// </summary>
